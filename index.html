@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Sat Oct 28 2023 03:56:12 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Sat Oct 28 2023 04:02:07 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="65139ab7a9da5b4579549ae9" data-wf-site="65139ab7a9da5b4579549a94">
 <head>
   <meta charset="utf-8">
@@ -209,7 +209,7 @@ margin: 0rem !important;
         <div class="navbar_container">
           <a href="index.html" aria-current="page" class="navbar_logo-link w-nav-brand w--current"><img src="images/TOMA-White-Logo.svg" loading="lazy" alt="Toma Development Logo; TOMA in white with the O replaced with a golden round British flag" class="navbar_logo"></a>
           <nav role="navigation" class="navbar_menu is-page-height-tablet w-nav-menu">
-            <a href="#" data-lenis-start="" class="navbar_link w-nav-link">About</a>
+            <a href="#about" data-lenis-start="" class="navbar_link w-nav-link">About</a>
             <a href="#service" data-lenis-start="" class="navbar_link w-nav-link">Services</a>
             <a href="#projects" data-lenis-start="" class="navbar_link w-nav-link">Projects</a>
             <a href="#partner" data-lenis-start="" class="navbar_link w-nav-link">Partners</a>
@@ -327,7 +327,7 @@ margin: 0rem !important;
           </div>
         </div>
       </section>
-      <section class="section_about">
+      <section id="about" class="section_about">
         <div class="padding-global">
           <div class="container-xlarge">
             <div class="about_component">
@@ -729,7 +729,7 @@ margin: 0rem !important;
                     <div class="footer_link-group">
                       <div id="w-node-cf53a531-95d2-5eea-aba3-4f8f53a1d154-79549ae9" class="footer_link-list">
                         <a href="index.html" aria-current="page" class="footer_link w--current">Home</a>
-                        <a href="#" class="footer_link">About</a>
+                        <a href="#about" class="footer_link">About</a>
                         <a href="#service" class="footer_link">Services</a>
                       </div>
                       <div id="w-node-_9f216c97-ec9d-5279-fc13-e2867be9fd6f-79549ae9" class="footer_link-list">
@@ -741,8 +741,8 @@ margin: 0rem !important;
                   </div>
                 </div>
                 <div id="w-node-_864f8700-1d7b-23fa-f649-56b8fc655ec3-79549ae9" class="footer_left-bottom-wrapper">
-                  <a href="#" class="footer_email-link w-inline-block">
-                    <div class="heading-style-h2 is-email-footer">hello@tomalimited.com</div>
+                  <a href="mailto:info@tomadevelopment.co" class="footer_email-link w-inline-block">
+                    <div class="heading-style-h2 is-email-footer">info@tomadevelopment.co</div>
                   </a>
                   <div class="spacer-medium"></div>
                   <div class="social-icons1_component">
@@ -825,8 +825,12 @@ margin: 0rem !important;
                 </div>
               </div>
               <div class="footer_legal-wrapper">
-                <div class="text-size-small text-color-grey-on-black">© 2023 TOMA. All rights reserved.</div>
-                <div class="text-size-small text-color-grey-on-black">Designed by Media Studio</div>
+                <div class="text-size-small text-color-grey-on-black">© <span id="year">2023</span> TOMA. All rights reserved.</div>
+                <div class="text-size-small text-color-grey-on-black">Designed by <a href="https://www.mediastudio.space/" target="_blank">Media Studio</a>
+                </div>
+                <div class="hide w-embed w-script">
+                  <script>document.querySelector('#year').innerText = new Date().getFullYear();</script>
+                </div>
               </div>
             </div>
           </div>
